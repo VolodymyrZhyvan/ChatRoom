@@ -1,0 +1,71 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="~/Content/Site.css" type="text/css" rel="stylesheet" />
+    <title>Chat Rooms</title>
+</head>
+<body>
+    <div id="header1">
+        <div class="title">Chat Rooms</div>
+    </div>
+
+    <div id="categories">
+
+        <a href="">Family</a>
+        <a href="">Friends</a>
+
+    </div>
+    <div id="loginBlock">
+        Enter Login:<br />
+        <input id="txtUserName" type="text" />
+        <input id="btnLogin" type="button" value="Enter" />
+    </div>
+    <div id="chatBody">
+        <div class="floating-box">       
+             <div id="header"></div>
+        <div id="inputForm">
+            <textarea class="form-control" rows="4" cols="40" id="message" placeholder="Write your message here"></textarea>
+            <input type="button" id="sendmessage" value="Send" />
+        </div>
+        </div>
+        <div class="floating-box">
+        <div id="chatusers">
+            <p><b>Active Users:</b></p>
+
+        </div>
+            </div>
+    </div>
+    <input id="hdId" type="hidden" />
+    <input id="username" type="hidden" />
+
+
+   
+    <div class="after-box">
+        <div id="chatroom">
+        </div>
+    </div>
+
+
+   
+        
+        
+
+
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+    <script src="~/Scripts/jquery.signalR-2.2.2.min.js"></script>
+
+
+    <script type="text/javascript" src="~/Scripts/chat.js"></script>
+
+ 
+    <script src="~/signalr/hubs"></script>
+
+
+</body>
+</html>
